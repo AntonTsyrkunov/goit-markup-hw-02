@@ -5,6 +5,7 @@ main font color #212121
 subfont color #757575
 footer contacts color rgba(255, 255, 255, 0.6)
 filter-button bckground #F5F4FA;  
+Web-element-icon-color: #000000;
 */
 :root{
     --main-body-color: #FFFFFF;
@@ -14,11 +15,12 @@ filter-button bckground #F5F4FA;
     --subfont-color: #757575;
     --footer-contacts-color: rgba(255, 255, 255, 0.6);
     --filter-button-bckground: #F5F4FA;
+    --web-element-black: #000000;
 }
 
 a:hover, 
 a:focus{
-    color: var(--main-theme-color)
+    color: var(--main-theme-color);
 }
 
 .current{
@@ -46,7 +48,6 @@ nav > .portfoliohead-list > a:active {
     font-size: 14px;
     line-height: 1.15em;
     letter-spacing: 0.02em;
-    text-decoration: none;
 }
 
 .hero{
@@ -114,9 +115,10 @@ nav > .portfoliohead-list > a:active {
 }
 .team-position{
     font-size: 16px;
-    line-height: 1.18px;
+    line-height: 1.18em;
     text-align: center;
     letter-spacing: 0.03em;
+    color: var(--subfont-color);
 }
 
 .footer {
@@ -128,7 +130,7 @@ nav > .portfoliohead-list > a:active {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.17empx;
+    line-height: 1.17em;
     letter-spacing: 0.03em;
 }
 
@@ -141,6 +143,17 @@ nav > .portfoliohead-list > a:active {
     letter-spacing: 0.03em;
 }
 
+
+.above-icon{
+    color: var(--web-element-black);
+
+}
+
+.below-icon{
+    color: var(--main-body-color);
+}
+
+
 /* portfolio page*/
 
 .project-caption {
@@ -151,15 +164,17 @@ nav > .portfoliohead-list > a:active {
     letter-spacing: 0.03em;
 }
 
-.filter-button{
-background-color: var(--filter-button-bckground);
-font-weight: 500;
-font-size: 16px;
-line-height: 1.62empx;
-letter-spacing: 0.03em;
-cursor: pointer;
+.filter-button {
+    background-color: var(--filter-button-bckground);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62em;
+    letter-spacing: 0.03em;
+    cursor: pointer;
 }
 
-.filter-button:hover{
+.filter-button:hover,
+.filter-button:focus {
     background-color: #2196F3;
+    color: var(--main-body-color)
 }
