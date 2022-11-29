@@ -44,6 +44,15 @@ nav > .portfoliohead-list > a:active {
 }
 
 .header{
+    color: var(--main-font-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15em;
+    letter-spacing: 0.02em;
+}
+
+.header-adress{
+    color: var(--subfont-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.15em;
