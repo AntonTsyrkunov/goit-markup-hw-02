@@ -42,9 +42,8 @@ a:focus{
     color: var(--main-theme-color);
 }
 
-..above-icon{
+.above-icon{
     color: var(--web-element-black);
-
 }
 
 
@@ -182,6 +181,7 @@ a:focus{
     line-height: 1.88em;
     letter-spacing: 0.03em;
 }
+
 .filter-button {
     background-color: var(--filter-button-bckground);
     font-weight: 500;
